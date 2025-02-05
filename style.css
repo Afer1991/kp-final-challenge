@@ -1,0 +1,142 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Oswald", sans-serif;
+}
+
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+header {
+  background: #2E323F;
+  padding: 1em 0;
+  text-align: center;
+}
+
+.nav {
+  width: 100%;
+}
+
+.nav-toggle {
+  cursor: pointer;
+  border: 0;
+  width: 3em;
+  height: 3em;
+  padding: 0em;
+  border-radius: 50%;
+  background: #A59678;
+  color: #000;
+  transition: opacity 250ms ease;  
+  position: absolute;
+  left: 0;
+}
+
+.nav-toggle:focus,
+.nav-toggle:hover {
+  opacity: .75;
+}
+
+.hamburger {
+  width: 50%;
+  position: relative;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  display: block;
+  margin: 0 auto;
+  height: 3px;
+  background: #000;
+}
+
+.hamburger::before,
+.hamburger::after {
+  content: '';
+  width: 100%;
+}
+
+.hamburger::before {
+  transform: translateY(-6px);
+}
+
+.hamburger::after {
+  transform: translateY(3px);
+}
+
+.nav {
+  visibility: hidden;
+  height: 0;
+  position: absolute;
+  font-size: 1rem;
+}
+
+.nav--visible {
+  visibility: visible;
+  height: auto;
+  position: relative;
+} 
+
+.nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav__list--primary {
+  margin-bottom: 2em;
+}
+
+.nav__link {
+  color: #FFF;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.125rem;
+}
+
+.nav__link--button {
+  background-color: #A59678;
+  padding: .1em .75em;
+  border-radius: 100px;
+}
+
+.nav__link:focus,
+.nav__link:hover {
+  opacity: .65;
+}
+
+@media (min-width: 700px) {
+  .nav-toggle {
+    display: none;
+  }
+
+  .nav {
+    visibility: visible;
+    display: flex;
+    height: auto;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+  }
+
+  .nav__list {
+    display: flex;
+    margin: 0;
+  }
+
+  .nav__item {
+    margin: 0 0 0 1.5em;
+  }
+
+  .row {
+    display: flex;
+    justify-content: space-between;
+  }
+}
