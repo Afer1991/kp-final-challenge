@@ -112,7 +112,41 @@ header {
   opacity: .65;
 }
 
-@media (min-width: 700px) {
+.hero {
+  background-color: #3B4050;
+  color: #FFF;
+  padding: 100px 0;
+}
+
+.hero h1 {
+  font-size: 5.625rem;
+}
+
+.golden {
+  color: #A59678;
+}
+
+.hero p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+}
+
+.btn {
+  color: #FFF;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #A59678;
+  padding: .25em .75em;
+  border-radius: 100px;
+  font-size: 1.5rem;
+}
+
+.btn:focus,
+.btn:hover {
+  opacity: .65;
+}
+
+@media (min-width: 1000px) {
   .nav-toggle {
     display: none;
   }
@@ -138,5 +172,10 @@ header {
   .row {
     display: flex;
     justify-content: space-between;
+  }
+
+  .hero__text {
+    align-self: flex-end;
+    margin-bottom: 100px;
   }
 }
