@@ -209,10 +209,64 @@ header {
   font-size: 1.125rem;
 }
 
+footer {
+  background-color: #3B4050;
+  padding: 100px 0;
+  text-align: center;
+}
+
+footer h1 {
+  color: #FFF;
+  text-align: center;
+  font-size: 3.75rem;
+  font-weight: 700;
+}
+
+.golden__text {
+  color: #A59678;
+  font-size: 1.3125rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+footer ul {
+  padding: 0;
+  margin-top: 2rem;
+}
+
+footer li {
+  margin-bottom: 1rem;
+}
+
+footer p,
+footer li {
+  color: #FFF;
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  list-style: none;
+}
+
+footer a {
+  text-decoration: none;
+  color: #FFF;
+}
+
+
+
 @media (min-width: 700px) {
   .sidebar {
     flex-direction: row;
     gap: .5rem;
+  }
+
+  footer {
+    text-align: left;
+  }
+
+  .footer__div {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
   }
 }
 
