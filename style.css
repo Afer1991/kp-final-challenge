@@ -167,6 +167,55 @@ header {
   font-size: 1.125rem;
 }
 
+.section--three {
+  padding: 100px 0;
+}
+
+.primary-content h2 {
+  font-size: 2.25rem;
+  color: #A59678;
+}
+
+.primary-content p {
+  font-family: "Monserrat", sans-serif;
+  font-size: 1.3125rem;
+}
+
+.primary-content img {
+  max-width: 100%;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 100px;
+}
+
+.sidebar div {
+  background-color: #3B4050;
+  color: #FFF;
+  text-align: center;
+  padding: 1rem 2rem;
+}
+
+.sidebar h2 {
+  font-size: 1.875rem;
+  font-weight: 700;
+}
+
+.sidebar p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.125rem;
+}
+
+@media (min-width: 700px) {
+  .sidebar {
+    flex-direction: row;
+    gap: .5rem;
+  }
+}
+
 @media (min-width: 1000px) {
   .nav-toggle {
     display: none;
@@ -199,5 +248,10 @@ header {
   .hero__text {
     align-self: flex-end;
     margin-bottom: 100px;
+  }
+
+  .sidebar {
+    flex-direction: column;
+    margin-top: 3rem;
   }
 }
